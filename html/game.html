@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/gamestyle.css">
+    <title>games</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="banner" ><a href="index.html"><img src="image/banner.png" alt="back to homepage"></a></li>
+            <li><a href="gallary.html">Clues</a></li>
+            <li><a href="element.html">Element</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="mode-selection">
+        <h1>Select player mode</h1>
+        <section id = "mode">
+            <div id="Commander">
+                <img class="content" src="image/Character/mock-19.png" alt="commander">
+                <img class="frame" src="image/New_web/New_web/materials/elements/elements-character frame.png" alt="">
+                <p>commander</p>
+                <button id="commander-button"><strong>Select</strong></button>
+            </div>
+            <div id="recruit">
+                <img class="content" src="image/Character/mock-18.png" alt="recruit">
+                <img class="frame" src="image/New_web/New_web/materials/elements/elements-character frame.png" alt="">
+                <p>recruit</p>
+                <button id="recruit-button"><strong>Select</strong></button>
+            </div>
+        </section>
+    </div>
+
+    <div id="character-selection">
+        <h1>select your character</h1>
+        <section id="character">
+            <div id="character-1">
+                <img class = "content" src="image/Character/mock-08.png" alt="character-1">
+                <img class="frame" src="image/New_web/New_web/materials/elements/elements-character frame.png" alt="">
+                <p>Soldier 1</p>
+                <button id="character-button-1"><strong>Select</strong></button>
+            </div>
+            <div id="character-2">
+                <img class="content" src="image/Character/mock-13.png" alt="character-2">
+                <img class="frame" src="image/New_web/New_web/materials/elements/elements-character frame.png" alt="">
+                <p>Soldier 2</p>
+                <button id="character-button-2"><strong>Select</strong></button>
+            </div>
+            <div id="character-3">
+                <img class="content" src="image/Character/mock-14.png" alt="character-3">
+                <img class="frame" src="image/New_web/New_web/materials/elements/elements-character frame.png" alt="">
+                <p>Soldier 3</p>
+                <button id="character-button-3"><strong>Select</strong></button>
+            </div>
+            <button id="back-to">back to mode selection</button>            
+        </section>
+        
+    </div>            
+
+    <div id="ready-selection">
+        <h1>Are you ready for the game?</h1>
+        <section id="ready-description"><p>You are the <em id="mode-name"></em>,<p id="commander-text">your mission is to set tasks and help the soldier to accomplish the task.</p><p id="soldier-text">your name is <em id = "soldier-name"></em>, your mission is to follow the instructions from commander to defeat the enemy</p></p></section>
+        <section id = "ready">
+            <button id="go" href="gallary.html">Begin</button>
+            <button id="back">back to mode selection</button>
+        </section>
+    </div>
+
+    <div id="game-board">
+        <section id="map">
+            <a class ="checktrigger"><img src="image/home_materials/home_elements-02.png" alt="checkpoint-1"></a>
+            <a class ="checktrigger-2"><img src="image/home_materials/home_elements-02.png" alt="checkpoint-2"></a>
+            <a class ="checktrigger-3"><img src="image/home_materials/home_elements-02.png" alt="checkpoint-3"></a>
+
+            <div id="characterInstance"><img src="image/Character/mock-13.png" alt="demo_character"></div>
+            <div id="character2Instance"><img src="image/Character/mock-13.png" alt="demo_character2"></div>
+            <div id="character3Instance"><img src="image/Character/mock-13.png" alt="demo_character2"></div>
+
+            <img id="medalTask1" src="image/Medals/moc-16.png" alt="medal">
+            <img id="nomedalTask1" src="image/Medals/NOmoc-16.png" alt="no medal">
+            <img id="medalTask2" src="image/Medals/moc-16.png" alt="medal">
+            <img id="nomedalTask2" src="image/Medals/NOmoc-16.png" alt="no medal">
+            <img id="medalTask3" src="image/Medals/moc-16.png" alt="medal">
+            <img id="nomedalTask3" src="image/Medals/NOmoc-16.png" alt="no medal">
+        </section>
+
+        <div class="missionstart1">
+            <span class="helper"></span>
+            <div id="taskscreen">
+                <div class="popupCloseButton">X</div>
+                <h2>Task#1: What am I?</h2>
+                <p>I am a teen<br>
+                    I am a mean machine<br>
+                    I don't retire<br>
+                    Always ready to fire<br>
+                    As quick as Light<br>
+                    With the horse's might<br>
+                        <i><br>Instruct the Recruit to guess the object</i>
+                        <i>and walk to the</i>
+                        <i>location to collect the item</i>
+                </p><br>
+                <button id="missionStartButton">Start Mission</button>
+            </div>
+    
+        </div>
+    
+        <div class="mission_1">
+				<span class="helper"></span>
+                <div id="mission_1_taskscreen">
+                    <h1 id="missionTitle">Wait and Watch Commander!</h1><br>
+                    <p id="instructions_1">Encourage your Soldier! 
+                        Reward your recruit by clicking the medal below
+						if they finish in allotted time</p><br>
+                    
+                        <div id="medal-selection">
+                            <div class="imgContainer">
+                                <img class="rightAnswerMedal" src="image/Medals/moc-16.png" alt="medal">
+                                <p class="medalsLegend">Medal: If complete within 2 minutes</p>
+                        </div>
+                        <div class="imgContainer">
+                            <img class="wrongAnswerMedal" src="image/Medals/NOmoc-16.png" alt="no medal">
+							<p class="medalsLegend">No Medal: If completed after 2 minutes</p>
+                        </div>
+                    </div>
+
+                    <div id="selection-results">
+                        <h1 id="congratsTitle">Congratulations Soldier! Keep it up!</h1>
+						<h1 id="congratsTitleNot">Better Luck Next Time Soldier!</h1>
+                        <div id="results_1"></div>
+                        <img id="resultsimage_1" src="image/Answers/Q1.4.png">
+                        <img id="resultsimage_2" src="image/Answers/Q1.5.png">
+                    </div><br>
+                    <button class="nextMission">Next Task</button>                    
+                </div>
+        </div>
+        <!--Task 2-->
+        <div class="missionstart2">
+			<span class="helper"></span>
+            <div id="taskscreen2">
+                <div class="popupCloseButton2">X</div>
+                <h2>Task#2: What am I?</h2>
+                <p>Take me to Members of the Voluntary Aid<br>
+                I am needed by people in every Grade<br>
+                My nature is that of steady detachment<br>
+                I serve all without any attachment<br>
+                Kangaroo Point is where I stay<br>
+                Where I am needed, every minute, every day<br>
+                    <i><br>Instruct the Recruit to guess the object</i>
+                    <i>and walk to the</i>
+                    <i>location to collect the item</i>
+                </p><br>
+                <button id="missionStartButton2">Start Mission</button>
+            </div>
+
+        </div>
+	
+        <div class="mission_2">
+				<span class="helper"></span>
+                <div id="mission_2_taskscreen">
+                    <h1 id="missionTitle2">Wait and Watch Commander!</h1><br>
+                    <p id="instructions_2">Encourage your Soldier! 
+                        Reward your recruit by clicking the medal below
+						if they finish in allotted time</p><br>
+					<!--<p id="timer"></p><br><br>-->
+                    
+                    <div id="medal-selection2">
+                        <div class="imgContainer2">
+                            <img class="rightAnswerMedal2" src="image/Medals/moc-16.png" alt="medal">
+							<p class="medalsLegend2">Medal: If complete within 2 minutes</p>
+                        </div>
+
+                        <div class="imgContainer2">
+                            <img class="wrongAnswerMedal2" src="image/Medals/NOmoc-16.png" alt="no medal">
+							<p class="medalsLegend2">No Medal: If completed after 2 minutes</p>
+                        </div>
+                    </div>
+
+                    <div id="selection-results2">
+						<h1 id="congratsTitle2">Congratulations Soldier! Keep it up!</h1>
+						<h1 id="congratsTitleNot2">Better Luck Next Time Soldier!</h1>
+                        <div id="results_2"></div>
+                        <img id="resultsimage_1_2" src="image/Answers/Q1.4.png">
+                        <img id="resultsimage_2_2" src="image/Answers/Q1.5.png">
+                    </div><br>
+
+
+                    <button class="nextMission2">Next Task</button>               
+                    
+                </div>
+        </div>
+
+        <!--Task 3-->
+        <div class="missionstart3">
+			<span class="helper"></span>
+            <div id="taskscreen3">
+                <div class="popupCloseButton3">X</div>
+                <h2>Task#3: What am I?</h2>
+                <p>Pick me up, swing me to and frow<br>
+                Parade Park is where I will go<br>
+                I rhyme with, but I don't stifle<br>
+                I am in a club, not called eiffel<br>
+                    <i><br>Instruct the Recruit to guess the object</i>
+                    <i>and walk to the</i>
+                    <i>location to collect the item</i>
+                </p><br>
+                <button id="missionStartButton3">Start Mission</button>
+            </div>
+
+        </div>
+	
+        <div class="mission_3">
+				<span class="helper"></span>
+                <div id="mission_3_taskscreen">
+                    <h1 id="missionTitle3">Wait and Watch Commander!</h1><br>
+                    <p id="instructions_3">Encourage your Soldier! 
+                        Reward your recruit by clicking the medal below
+						if they finish in allotted time</p><br>
+					<!--<p id="timer"></p><br><br>-->
+                    
+                    <div id="medal-selection3">
+                        <div class="imgContainer3">
+                            <img class="rightAnswerMedal3" src="image/Medals/moc-16.png" alt="medal">
+							<p class="medalsLegend3">Medal: If complete within 2 minutes</p>
+                        </div>
+
+                        <div class="imgContainer3">
+                            <img class="wrongAnswerMedal3" src="image/Medals/NOmoc-16.png" alt="no medal">
+							<p class="medalsLegend3">No Medal: If completed after 2 minutes</p>
+                        </div>
+                    </div>
+
+                    <div id="selection-results3">
+						<h1 id="congratsTitle3">Congratulations Soldier! Keep it up!</h1>
+						<h1 id="congratsTitleNot3">Better Luck Next Time Soldier!</h1>
+                        <div id="results_3"></div>
+                        <img id="resultsimage_1_3" src="image/Answers/Q1.4.png">
+                        <img id="resultsimage_2_3" src="image/Answers/Q1.5.png">
+                    </div><br>
+
+
+                    <button class="nextMission3">End Mission!</button> 
+        
+    </div>    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
